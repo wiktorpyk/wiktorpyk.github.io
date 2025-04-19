@@ -1,67 +1,74 @@
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Wiktor Pyk-Półtorak</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.js"></script>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Wiktor Pyk</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0f0f0f;
+      color: #e0e0e0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+    }
 
-    <style>
-      .container { 
-        height: 200px;
-        position: relative;
-        border: 3px solid green; 
-      }
-      
-      .center {
-        margin: 0;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-      }
-      </style>
-  </head>
+    h1 {
+      font-size: 3em;
+      margin-bottom: 0.2em;
+    }
 
-  <body class="text-center">
-    <nav class="navbar navbar-expand navbar-dark bg-dark">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample02" aria-controls="navbarsExample02" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+    p {
+      font-size: 1.2em;
+      color: #b0b0b0;
+    }
 
-      <div class="collapse navbar-collapse" id="navbarsExample02">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="/.">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/socials">My Socials</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/contact">Contact me</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-    
-    <div class="cover-container d-flex p-3 mx-auto flex-column">
-      <!--What the hell am I doing? -->
-      <main role="main" class="inner cover" style="display: flex; justify-content: center;  top: 50%; left: 50%;">
-        <!--
-        <h1 class="cover-heading">Cover your page.</h1> -->
-        <h2 class="center">My name is Wiktor. Please hire me.</h2>
-        <!-- 
-        <p class="lead">
-          <a href="#" class="btn btn-lg btn-secondary">Learn more</a>
-        </p>
-        s-->
-      </main>
+    .links {
+      margin-top: 2em;
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+    }
 
+    .links a {
+      color: #61dafb;
+      text-decoration: none;
+      font-size: 1.1em;
+      transition: color 0.2s;
+    }
+
+    .links a:hover {
+      color: #ffffff;
+    }
+
+    footer {
+      margin-top: 4em;
+      font-size: 0.9em;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Wiktor Pyk</h1>
+    <p>Programmer • Linux Enthusiast • Tinkerer</p>
+
+    <div class="links">
+      <a href="https://github.com/wiktorpp/" target="_blank">GitHub</a>
+      <a href="https://gitlab.com/wiktorpp" target="_blank">GitLab</a>
+      <a href="https://leetcode.com/u/wiktorpp/" target="_blank">LeetCode</a>
+      <a href="https://matrix.to/#/@wiktorpyk04:matrix.org" target="_blank">Matrix</a>
+      <a href="https://wiktorpp.itch.io" target="_blank">Itch.io</a>
     </div>
+  </main>
 
-
-  
-
-</body></html>
+  <footer>
+    &copy; 2025 Wiktor Pyk
+  </footer>
+</body>
+</html>
